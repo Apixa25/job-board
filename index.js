@@ -1,4 +1,4 @@
-
+const xphbs = require('express-handlebars');
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -6,8 +6,10 @@ app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`);
 });
 
-const xphbs = require('express-handlebars');
-app.engine('handlebars', xphbs({ defaultLayout: 'main' }));
+const hbs = xphbs.create();
+
+
+app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 
