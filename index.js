@@ -1,10 +1,22 @@
-steven => {
-    console.log('Hello, I am Steven');
-    console.log('I am a software engineer');
-};
 
-function steven2() {
-    console.log('Hello, I am Steven');
-    console.log('I am a software engineer yet again');
-};
+const express = require('express');
+const app = express();
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server listening on port ${PORT}`);
+});
+
+const xphbs = require('express-handlebars');
+app.engine('handlebars', xphbs({ defaultLayout: 'main' }));
+app.set('view engine', 'handlebars');
+
+
+
+
+function steven() {
+    console.log('steven is awesome!');
+}
+console.log(steven());
+
+
 
