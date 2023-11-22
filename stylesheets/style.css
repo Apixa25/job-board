@@ -1,10 +1,29 @@
 body {
-    background-image: url("../images/Illustration.png");
+    /* background-image: url("../images/PXL_20231122_010606385.MP.jpg"); */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
   }
   
+h1 {
+    color:whitesmoke;
+    font-size: 44px;
+    text-align: center;
+    /* margin-top: 10%; */
+  }
+
+h5 {
+    color:whitesmoke;
+    font-size: 24px;
+    text-align: center;
+    /* margin-top: 10%; */
+  }
+
+
+
+
+
+
   #logo {
     mix-blend-mode: multiply;
     max-width: 3%;
@@ -36,3 +55,14 @@ body {
     font-size: .8em;
   }
   
+  .carousel-inner {
+    width: 35%;
+    height: 35%;
+/* center the image */
+    margin: auto;
+  }
+
+  /* .carousel-item {
+    width: 50%;
+    height: 50%;
+  } */
